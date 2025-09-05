@@ -12,11 +12,14 @@
     "turbo": "2.5.2"
   },
   "engines": {
-    "node": ">=18.8.0"
+    "node": ">=18.8.0",
+    "pnpm": ">=8.0.0"
   },
-  "workspaces": [
-    "apps/*",
-    "packages/*"
-  ],
-  "packageManager": "yarn@1.22.19"
+  "packageManager": "pnpm@8.15.6",
+  "pnpm": {
+    "overrides": {
+      "@types/react": "^19.1.8",
+      "@types/react-dom": "^19.1.6"
+    }
+  }
 }
